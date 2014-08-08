@@ -1,0 +1,62 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.name {
+	font-size: 16px;
+}
+
+.from {
+	color: #9132FA;
+}
+
+.to {
+	color: #9132FA;
+}
+
+.plate {
+	color: #148721;
+	font-size: 16px;
+}
+
+.ride {
+	border-width: 0px;
+	border-style: solid;
+	background-color: #dfdfd9;
+}
+
+.direction {
+
+}
+
+.rideList {
+height:70%;
+overflow:scroll;
+}
+
+.rideFrm {
+		width : 400px;
+}
+
+.rideListMain {
+
+}
+
+tab {
+	background-color: #8asd9a;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-family: inherit;
+	font-weight: 500;
+	line-height: 1.1;
+	color: inherit;margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.mainContainer {
+	margin-left: 20px;
+	size: 100%;
+}
+body {
+	font-family: "Verdana", "Times New Roman";	
+}

@@ -1,0 +1,21 @@
+<hr>
+<div> 
+	<span class="name"> {{ride.name}} </span> - 
+	<a href="mailto:{{ride.email}}"> {{ride.email}}</a> 
+	<a href="tel:1{{ride.phone}}">{{' (' + ride.phone + ')'}}</a> 
+</div>
+<div> 
+	<span class="plate"> {{ride.plate}} </span> {{' - ' + ride.make + ' ' + ride.model}} 
+</div>			
+<div> 
+	<span class="from"> 
+		<a target="_blank" href="http://maps.google.com/?q={{ride.from}}">{{ride.from}},{{ride.fromcity}},{{ride.fromstate}} {{ride.frompin}}</a> 
+	</span> 
+	<span> to </span> 
+	<span class="to"> 
+		<a target="_blank" href="http://maps.google.com/?q={{ride.to}}">{{ride.to}},{{ride.tocity}},{{ride.tostate}} {{ride.topin}} </a> 
+	</span>
+	<span class="direction"> 
+		<a target="_blank" href="https://www.google.com/maps/dir/{{ride.from}},{{ride.fromcity}},{{ride.fromstate}} {{ride.frompin}}/{{ride.to}},{{ride.tocity}},{{ride.tostate}} {{ride.topin}}"><button> Get Direction </button></a>
+	</span>
+</div>

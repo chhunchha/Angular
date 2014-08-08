@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="busyInLoad" >
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS Busy In Load</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+  <style>
+  div.busy
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img.busy {
+    width: 20px;
+    height: 20px;
+  }
+  </style>
+  <script>
+
+  var app = angular.module('busyInLoad', []);
+
+  app.controller('loadCtrl', function($scope) {
+    $scope.busy = true;
+    setTimeout(function() {
+      $scope.$apply(function() {
+      $scope.busy = false;
+      });
+    }, 2000);
+  });
+
+
+</script>
+</head>
+<body ng-controller="loadCtrl">
+  Hello 
+  <ul >
+  <div class="busy" ng-show="busy">
+    <img class="busy" src="busy.GIF">
+  </div>
+</ul>
+</body>
+</html>

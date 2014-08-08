@@ -1,0 +1,46 @@
+
+	<form name="addRideFrm" ng-submit="addRide()" >
+		<div class="form-group col-xs-10 col-lg-1">
+			<label> Name: </label>
+			<input type="text" ng-model="name" class="input-small form-control" required select-on-click>
+		</div>
+		<div class="form-group col-xs-5 col-lg-1" >
+			<label>  Make: </label>
+		    <input type = "text" ng-model="make" class="form-control" required select-on-click>
+		</div>
+		<div class="form-group col-xs-5 col-lg-1">
+			<label> Model:</label>
+			<input type = "text" ng-model="model" class="form-control" required select-on-click>
+		</div>
+		<div class="form-group col-xs-5 col-lg-2"> 
+			<label> Plate Number:</label>
+			<input type = "text" ng-model="plate" class="form-control" required select-on-click>
+		</div>
+		<div class="form-group col-xs-10 col-lg-1">
+			<label> From:</label>
+			<input type = "text" ng-model="from" class="form-control" required select-on-click>
+			<input type = "text" ng-model="fromcity" class="form-control" required select-on-click>
+			<input type = "text" ng-model="fromstate" class="form-control" required select-on-click>
+			<input type = "text" ng-model="frompin" class="form-control" required select-on-click maxlength="5" ng-minlength="5">
+		</div>
+		<div class="form-group col-xs-10 col-lg-1">
+			<label> To:</label> 
+			<input type = "text" ng-model="to" class="form-control" required select-on-click>
+			<input type = "text" ng-model="tocity" class="form-control" required select-on-click>
+			<input type = "text" ng-model="tostate" class="form-control" required select-on-click>
+			<input type = "text" ng-model="topin" class="form-control" required select-on-click maxlength="5" ng-minlength="5">
+		</div>
+		<div class="form-group col-xs-10 col-lg-1">
+			<label> Email:</label>
+			<input type="email" name="email" ng-model="email" class="form-control" required select-on-click>
+			<span ng-show="rideFrm.email.$error.required">*</span>
+			<span ng-show="rideFrm.email.$error.email">not an email..</span>
+		</div>
+		<div class="form-group col-xs-10 col-lg-1">
+			<label> Phone:</label>
+			<input type = "text" ng-model="phone" size="10" class="form-control" ng-maxlength="10" ng-minlength="10" select-on-click>
+		</div>
+		<div class="form-group col-xs-10 col-lg-1">
+			<button class="btn btn-primary" ng-disabled="frm.$invalid">Add Ride</button>
+		</div>
+	</form>	
